@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First Suite" parallel="classes" thread-count="2">
+	<listeners>	
+    	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+     </listeners>
+	<!-- FF : Firefox, IE : Internet Explorer, CH : Chrome, SF : Safari -->
+	<parameter name="browser" value="FF"></parameter>
+	<!-- Above this line do not delete anything -->
+    
+  <test name="Login Test">
+  	<parameter name="platform" value="Windows" />
+	<parameter name="browser" value="FF" />
+	<parameter name="version" value="" />  
+    <classes>
+      <class name="com.tagrem.cra.admin.NewTest"/>
+      	<methods>
+      	    <include name="login"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CreateSuperAdmin Test">
+    <classes>
+      <class name="com.tagrem.cra.admin.NewTest"/>
+      	<methods>
+      	    <include name="createSuperAdmin"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test --> 
+  </suite> <!-- Suite -->

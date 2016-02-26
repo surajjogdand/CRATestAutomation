@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="7" name="Failed suite [First Suite]" parallel="classes">
+  <test name="Login Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="CreateAttribute Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="createAttribute"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- CreateAttribute Test(failed) -->
+  <test name="DeleteAttribute Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="deleteAttribute"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- DeleteAttribute Test(failed) -->
+  <test name="CreateAttributeGroup Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="createAttributeGroup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- CreateAttributeGroup Test(failed) -->
+  <test name="DeleteAttributeGroup Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="deleteAttributeGroup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- DeleteAttributeGroup Test(failed) -->
+  <test name="CreateContact Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- CreateContact Test(failed) -->
+</suite> <!-- Failed suite [First Suite] -->

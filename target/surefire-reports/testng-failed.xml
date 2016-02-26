@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="7" verbose="0" name="Failed suite [First Suite]" parallel="classes">
+  <test name="DeleteAttribute Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="deleteAttribute"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- DeleteAttribute Test(failed) -->
+  <test name="DeleteAttributeGroup Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="deleteAttributeGroup"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- DeleteAttributeGroup Test(failed) -->
+  <test name="CreateContact Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createContact"/>
+        </methods>
+      </class> <!-- com.tagrem.cars.test.CarsNewTest -->
+    </classes>
+  </test> <!-- CreateContact Test(failed) -->
+</suite> <!-- Failed suite [First Suite] -->

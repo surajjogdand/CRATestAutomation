@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="First Suite" parallel="classes" thread-count="7">
+  <test name="Login Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="login"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test -->  
+  <test name="CreateAttribute Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="createAttribute"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test --> 
+  <test name="DeleteAttribute Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="deleteAttribute"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test --> 
+  <test name="CreateAttributeGroup Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="createAttributeGroup"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test --> 
+  <test name="DeleteAttributeGroup Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="deleteAttributeGroup"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test --> 
+  <test name="CreateContact Test">
+    <classes>
+      <class name="com.tagrem.cars.test.CarsNewTest"/>
+      	<methods>
+      	    <include name="createContact"/>
+      	</methods>
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
